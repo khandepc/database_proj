@@ -5,7 +5,7 @@ mydb=conn.connect(
     user="root",
     passwd="root"
 )
-print(mydb)
+#print(mydb)
 
 mycursor=mydb.cursor()
 # sql="create database learningDB"

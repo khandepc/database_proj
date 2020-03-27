@@ -10,11 +10,14 @@ mydb=conn.connect(
 #print(mydb)
 mycursor=mydb.cursor()
 
-# query="""create table students (id int auto_increment primary key,name verchar(30),age int, course varchar(30))"""
-# mycursor.execute(query)
+query="""create table students2 (id int auto_increment primary key,name varchar(30),age int, course varchar(30))"""
+#mycursor.execute(query)
+
+queiry2='create table students '\
+    '(id int auto_increment primary key,name varchar(30))'
+
+#mycursor.execute(queiry2)
 
 
-query2="show database"
-mycursor.execute(query2)
-for x in mycursor:
-    print(x)
+quiery3="show tables"
+mycursor.execute(quiery3)

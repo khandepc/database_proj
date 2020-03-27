@@ -17,7 +17,7 @@ for x in mycursor:
     print(x)
 #
 # query2="create database inportia_it_solutions"
-# #mycursor.execute(query2)
+##mycursor.execute(query2)
 # mycursor.execute(query)
 #
 # for x in mycursor:

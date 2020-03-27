@@ -22,12 +22,12 @@ mycursor=mydb.cursor()
 # mycursor.execute(sql)
 
 #insert
-sql="""insert into Employee 
-            (name,qualification,age,salary)
-            values
-            ('Rashmi','BAMS',23,35000)"""
+# sql="""insert into Employee
+#             (name,qualification,age,salary)
+#             values
+#             ('Rashmi','BAMS',23,35000)"""
 
-sql="""insert into Employee 
+sql="""insert into Employee
             (name,qualification,age,salary)
             values
             (%s,%s,%s,%s)"""
@@ -43,3 +43,12 @@ if count>0:
     print("record inserted successfully")
 else:
     print("no record inserted")
+
+#
+#sql="delete from Employee where salary=35000 and name='rashmi'"
+#
+# sql="select * from Employee"
+# mycursor.execute(sql)
+#
+# for i in mycursor:
+#     print(i)
